@@ -1,6 +1,6 @@
 module.exports = function (text, callback) {
 
-    let rules = [
+    const rules = [
         // 带有协议的类型（应用自定义eg: evernote://x.x）
         /[a-zA-Z]+:\/\/[^\s]+/,
 
@@ -11,6 +11,7 @@ module.exports = function (text, callback) {
         // ip形式
         // ipV4 (1~255).(0~255).(0~255).(0.255)
 
-    ]
+    ];
+    return true
 
 };

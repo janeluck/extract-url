@@ -1,0 +1,22 @@
+{
+  "name": "extract-url",
+  "version": "1.0.0",
+  "description": "Extract the url that can be opened by the browser from the text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janeluck/extract-url.git"
+  },
+  "keywords": [
+    "url"
+  ],
+  "author": "janeluck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janeluck/extract-url/issues"
+  },
+  "homepage": "https://github.com/janeluck/extract-url#readme"
+}

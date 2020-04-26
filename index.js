@@ -6,7 +6,6 @@ module.exports = function (text) {
         /[a-z]+:\/\/[^\s]+/ig,
 
         // 不带协议，以顶级域名结尾
-        // todo 补充顶级域名
         /([a-z0-9]+\.)+(com|org|net|edu|gov|mil)((\/[^\s]*)|(\/?))/ig,
 
         // ip形式

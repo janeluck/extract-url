@@ -4,7 +4,8 @@ describe('Simple Math Test', () => {
     const str1 = '哈哈：evernote://x.y 213132',
         str2 = '哈哈：www.io.com',
         str3 = '哈哈：www.io.com/hhd/#22?id=2&name=jane',
-        all = str1 + '\n' + str2 + '\n' + str3;
+        str4 = '吼吼：10.2.23.2',
+        all = str1 + '\n' + str2 + '\n' + str3 + '\n' + str4;
     it(`custom protocol: ${str1}`, () => {
         assert.deepEqual(extractUrl(str1), ['evernote://x.y']);
     });
@@ -16,9 +17,12 @@ describe('Simple Math Test', () => {
         assert.deepEqual(extractUrl(str3), ['www.io.com/hhd/#22?id=2&name=jane']);
     });
 
+    it(`ipV4: ${str4}`, () => {
+        assert.deepEqual(extractUrl(str4), ['10.2.23.2']);
+    });
 
     it(`all: ${all}`, () => {
-        assert.deepEqual(extractUrl(all), ['evernote://x.y', 'www.io.com', 'www.io.com/hhd/#22?id=2&name=jane']);
+        assert.deepEqual(extractUrl(all), ['evernote://x.y', 'www.io.com', 'www.io.com/hhd/#22?id=2&name=jane', '10.2.23.2']);
     });
 
 });
